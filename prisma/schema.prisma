@@ -1,0 +1,34 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native"]
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Inspection {
+  id           String   @id @default(cuid())
+  // Header Information
+  completedBy  String
+  building     String
+  supervisor   String
+  department   String
+  date         DateTime
+  room         String
+  phone        String
+  
+  // Status
+  isCompleted  Boolean  @default(false)
+  isDraft      Boolean  @default(true)
+  
+  // General Safety Responses (16 items)
+  generalSafety Json     // Will store array of {itemNumber: number, response: 'yes'|'no'|'na', comments: string}
+  
+  // Fire Safety Responses (6 items)
+  fireSafety    Json     // Will store array of {itemNumber: number, response: 'yes'|'no'|'na', comments: string}
+  
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
