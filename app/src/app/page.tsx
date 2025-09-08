@@ -1,7 +1,7 @@
 
-import { InspectionFormWrapper } from "@/components/inspection-form-wrapper"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { InspectionFormWrapper } from "@/src/components/inspection-form-wrapper"
+import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
+import { Button } from "@/src/components/ui/button"
 import { Shield, FileText, Users, Building2 } from "lucide-react"
 import Link from "next/link"
 

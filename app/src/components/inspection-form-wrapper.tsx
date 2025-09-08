@@ -1,8 +1,8 @@
 
 "use client"
 
-import { InspectionForm } from "@/components/inspection-form"
-import type { InspectionData } from "@/lib/types"
+import { InspectionForm } from "@/src/components/inspection-form"
+import type { InspectionData } from "@/src/lib/types"
 
 export function InspectionFormWrapper() {
   const handleSubmit = async (data: InspectionData, isDraft: boolean) => {

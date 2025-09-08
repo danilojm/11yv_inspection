@@ -1,7 +1,7 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { PDFGenerator } from "@/components/pdf-generator"
+import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
+import { Button } from "@/src/components/ui/button"
+import { PDFGenerator } from "@/src/components/pdf-generator"
 import { Shield, FileText, Calendar, User, Building, CheckCircle, Clock } from "lucide-react"
 import Link from "next/link"
 import { PrismaClient } from '@prisma/client'

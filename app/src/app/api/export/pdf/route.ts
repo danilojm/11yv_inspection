@@ -1,7 +1,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
-import { GENERAL_SAFETY_ITEMS, FIRE_SAFETY_ITEMS } from '@/lib/constants'
+import { GENERAL_SAFETY_ITEMS, FIRE_SAFETY_ITEMS } from '@/src/lib/constants'
 
 export const dynamic = "force-dynamic"
 

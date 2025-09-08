@@ -1,7 +1,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
-import type { InspectionData } from '@/lib/types'
+import type { InspectionData } from '@/src/lib/types'
 
 export const dynamic = "force-dynamic"
 
